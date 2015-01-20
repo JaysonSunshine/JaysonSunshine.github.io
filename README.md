@@ -1,5 +1,3 @@
-# blutz.github.io
+This is a fork of # blutz.github.io. Very clean interface I wanted to use until I update with my own. Thank you, Byron Lutz.
 
-My personal webpage with my portfolio, resume, contact info, class notes, and more.
-
-If you want to add/change any of the class notes, please submit a pull request.
+My personal webpage with my portfolio, resume, contact info, interests, and more.
