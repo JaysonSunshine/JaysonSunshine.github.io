@@ -18,6 +18,11 @@ label Alignment Snakes
 priority 3
 defaultIsClosed 0
 
+name annotationrefseq
+label Refseq Annotations
+priority 3
+defaultIsClosed 1
+
 name exp
 label Experimental
 priority 4
