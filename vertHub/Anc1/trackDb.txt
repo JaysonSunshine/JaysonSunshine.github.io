@@ -39,8 +39,8 @@ compositeTrack on
 shortLabel VertebratesCompHub
 longLabel Vertebrates Comparative Assembly Hub
 group comphub
-subGroup1 view Track_Type Snake=Alignments augCGP_denovo=augCGP_denovo 
-subGroup2 orgs Organisms rn6=rn6 Anc4=Anc4 bosTau8=bosTau8 canFam3=canFam3 Anc0=Anc0 Anc1=Anc1 Anc2=Anc2 Anc3=Anc3 Anc5=Anc5 rheMac3=rheMac3 Anc6=Anc6 mm10=mm10 galGal4=galGal4 monDom5=monDom5 hg38=hg38
+subGroup1 view Track_Type Snake=Alignments augCGP_rnaseq=augCGP_rnaseq 
+subGroup2 orgs Organisms Anc6=Anc6 Anc0=Anc0 Anc1=Anc1 monDom5=monDom5 hg38=hg38 rheMac3=rheMac3 bosTau8=bosTau8 canFam3=canFam3 galGal4=galGal4 Anc2=Anc2 Anc3=Anc3 rn6=rn6 Anc4=Anc4 Anc5=Anc5 mm10=mm10
 dragAndDrop subTracks
 #allButtonPair on
 dimensions dimensionX=view dimensionY=orgs
@@ -51,238 +51,121 @@ visibility full
 html ../documentation/hubCentral
 type bigBed 3
 
-	track hubCentralaugCGP_denovo
-	shortLabel augCGP_denovo
-	view augCGP_denovo
+	track hubCentralaugCGP_rnaseq
+	shortLabel augCGP_rnaseq
+	view augCGP_rnaseq
 	visibility dense
 	subTrack hubCentral
 
-		track augCGP_denovobosTau8
-		longLabel bosTau8 Lifted-over augCGP_denovo
-		priority 4
+		track augCGP_rnaseqbosTau8
+		longLabel bosTau8 Lifted-over augCGP_rnaseq
+		priority 8
 		type bigBed 12 .
-		group annotationaugCGP_denovo
+		group annotationaugCGP_rnaseq
 		searchIndex name
 		itemRgb On
 		visibility hide
-		shortLabel bosTau8augCGP_denovo
-		bigDataUrl ../liftoverbed/augCGP_denovo/bosTau8/Anc1.bb
-		parent hubCentralaugCGP_denovo off
-		subGroups view=augCGP_denovo orgs=bosTau8
+		shortLabel bosTau8augCGP_rnaseq
+		bigDataUrl ../liftoverbed/augCGP_rnaseq/bosTau8/Anc1.bb
+		parent hubCentralaugCGP_rnaseq off
+		subGroups view=augCGP_rnaseq orgs=bosTau8
 
-		track augCGP_denovocanFam3
-		longLabel canFam3 Lifted-over augCGP_denovo
-		priority 5
+		track augCGP_rnaseqcanFam3
+		longLabel canFam3 Lifted-over augCGP_rnaseq
+		priority 9
 		type bigBed 12 .
-		group annotationaugCGP_denovo
+		group annotationaugCGP_rnaseq
 		searchIndex name
 		itemRgb On
 		visibility hide
-		shortLabel canFam3augCGP_denovo
-		bigDataUrl ../liftoverbed/augCGP_denovo/canFam3/Anc1.bb
-		parent hubCentralaugCGP_denovo off
-		subGroups view=augCGP_denovo orgs=canFam3
+		shortLabel canFam3augCGP_rnaseq
+		bigDataUrl ../liftoverbed/augCGP_rnaseq/canFam3/Anc1.bb
+		parent hubCentralaugCGP_rnaseq off
+		subGroups view=augCGP_rnaseq orgs=canFam3
 
-		track augCGP_denovogalGal4
-		longLabel galGal4 Lifted-over augCGP_denovo
-		priority 14
+		track augCGP_rnaseqgalGal4
+		longLabel galGal4 Lifted-over augCGP_rnaseq
+		priority 10
 		type bigBed 12 .
-		group annotationaugCGP_denovo
+		group annotationaugCGP_rnaseq
 		searchIndex name
 		itemRgb On
 		visibility hide
-		shortLabel galGal4augCGP_denovo
-		bigDataUrl ../liftoverbed/augCGP_denovo/galGal4/Anc1.bb
-		parent hubCentralaugCGP_denovo off
-		subGroups view=augCGP_denovo orgs=galGal4
+		shortLabel galGal4augCGP_rnaseq
+		bigDataUrl ../liftoverbed/augCGP_rnaseq/galGal4/Anc1.bb
+		parent hubCentralaugCGP_rnaseq off
+		subGroups view=augCGP_rnaseq orgs=galGal4
 
-		track augCGP_denovohg38
-		longLabel hg38 Lifted-over augCGP_denovo
+		track augCGP_rnaseqhg38
+		longLabel hg38 Lifted-over augCGP_rnaseq
+		priority 6
+		type bigBed 12 .
+		group annotationaugCGP_rnaseq
+		searchIndex name
+		itemRgb On
+		visibility hide
+		shortLabel hg38augCGP_rnaseq
+		bigDataUrl ../liftoverbed/augCGP_rnaseq/hg38/Anc1.bb
+		parent hubCentralaugCGP_rnaseq off
+		subGroups view=augCGP_rnaseq orgs=hg38
+
+		track augCGP_rnaseqmm10
+		longLabel mm10 Lifted-over augCGP_rnaseq
 		priority 16
 		type bigBed 12 .
-		group annotationaugCGP_denovo
+		group annotationaugCGP_rnaseq
 		searchIndex name
 		itemRgb On
 		visibility hide
-		shortLabel hg38augCGP_denovo
-		bigDataUrl ../liftoverbed/augCGP_denovo/hg38/Anc1.bb
-		parent hubCentralaugCGP_denovo off
-		subGroups view=augCGP_denovo orgs=hg38
+		shortLabel mm10augCGP_rnaseq
+		bigDataUrl ../liftoverbed/augCGP_rnaseq/mm10/Anc1.bb
+		parent hubCentralaugCGP_rnaseq off
+		subGroups view=augCGP_rnaseq orgs=mm10
 
-		track augCGP_denovomm10
-		longLabel mm10 Lifted-over augCGP_denovo
+		track augCGP_rnaseqmonDom5
+		longLabel monDom5 Lifted-over augCGP_rnaseq
+		priority 5
+		type bigBed 12 .
+		group annotationaugCGP_rnaseq
+		searchIndex name
+		itemRgb On
+		visibility hide
+		shortLabel monDom5augCGP_rnaseq
+		bigDataUrl ../liftoverbed/augCGP_rnaseq/monDom5/Anc1.bb
+		parent hubCentralaugCGP_rnaseq off
+		subGroups view=augCGP_rnaseq orgs=monDom5
+
+		track augCGP_rnaseqrheMac3
+		longLabel rheMac3 Lifted-over augCGP_rnaseq
+		priority 7
+		type bigBed 12 .
+		group annotationaugCGP_rnaseq
+		searchIndex name
+		itemRgb On
+		visibility hide
+		shortLabel rheMac3augCGP_rnaseq
+		bigDataUrl ../liftoverbed/augCGP_rnaseq/rheMac3/Anc1.bb
+		parent hubCentralaugCGP_rnaseq off
+		subGroups view=augCGP_rnaseq orgs=rheMac3
+
+		track augCGP_rnaseqrn6
+		longLabel rn6 Lifted-over augCGP_rnaseq
 		priority 13
 		type bigBed 12 .
-		group annotationaugCGP_denovo
+		group annotationaugCGP_rnaseq
 		searchIndex name
 		itemRgb On
 		visibility hide
-		shortLabel mm10augCGP_denovo
-		bigDataUrl ../liftoverbed/augCGP_denovo/mm10/Anc1.bb
-		parent hubCentralaugCGP_denovo off
-		subGroups view=augCGP_denovo orgs=mm10
-
-		track augCGP_denovomonDom5
-		longLabel monDom5 Lifted-over augCGP_denovo
-		priority 15
-		type bigBed 12 .
-		group annotationaugCGP_denovo
-		searchIndex name
-		itemRgb On
-		visibility hide
-		shortLabel monDom5augCGP_denovo
-		bigDataUrl ../liftoverbed/augCGP_denovo/monDom5/Anc1.bb
-		parent hubCentralaugCGP_denovo off
-		subGroups view=augCGP_denovo orgs=monDom5
-
-		track augCGP_denovorheMac3
-		longLabel rheMac3 Lifted-over augCGP_denovo
-		priority 11
-		type bigBed 12 .
-		group annotationaugCGP_denovo
-		searchIndex name
-		itemRgb On
-		visibility hide
-		shortLabel rheMac3augCGP_denovo
-		bigDataUrl ../liftoverbed/augCGP_denovo/rheMac3/Anc1.bb
-		parent hubCentralaugCGP_denovo off
-		subGroups view=augCGP_denovo orgs=rheMac3
-
-		track augCGP_denovorn6
-		longLabel rn6 Lifted-over augCGP_denovo
-		priority 2
-		type bigBed 12 .
-		group annotationaugCGP_denovo
-		searchIndex name
-		itemRgb On
-		visibility hide
-		shortLabel rn6augCGP_denovo
-		bigDataUrl ../liftoverbed/augCGP_denovo/rn6/Anc1.bb
-		parent hubCentralaugCGP_denovo off
-		subGroups view=augCGP_denovo orgs=rn6
+		shortLabel rn6augCGP_rnaseq
+		bigDataUrl ../liftoverbed/augCGP_rnaseq/rn6/Anc1.bb
+		parent hubCentralaugCGP_rnaseq off
+		subGroups view=augCGP_rnaseq orgs=rn6
 
 	track hubCentralAlignments
 	shortLabel Alignments
 	view Alignments
 	visibility full
 	subTrack hubCentral
-
-		track snakern6
-		longLabel rn6
-		shortLabel rn6
-		otherSpecies rn6
-		visibility hide
-		parent hubCentralAlignments off
-		showSnpWidth 3121
-		priority 2
-		bigDataUrl ../lod.txt
-		type halSnake
-		group snake
-		subGroups view=Snake orgs=rn6
-
-		track snakeAnc4
-		longLabel Anc4
-		shortLabel Anc4
-		otherSpecies Anc4
-		visibility hide
-		parent hubCentralAlignments off
-		showSnpWidth 3121
-		priority 3
-		bigDataUrl ../lod.txt
-		type halSnake
-		group snake
-		subGroups view=Snake orgs=Anc4
-
-		track snakebosTau8
-		longLabel bosTau8
-		shortLabel bosTau8
-		otherSpecies bosTau8
-		visibility hide
-		parent hubCentralAlignments off
-		showSnpWidth 3121
-		priority 4
-		bigDataUrl ../lod.txt
-		type halSnake
-		group snake
-		subGroups view=Snake orgs=bosTau8
-
-		track snakecanFam3
-		longLabel canFam3
-		shortLabel canFam3
-		otherSpecies canFam3
-		visibility hide
-		parent hubCentralAlignments off
-		showSnpWidth 3121
-		priority 5
-		bigDataUrl ../lod.txt
-		type halSnake
-		group snake
-		subGroups view=Snake orgs=canFam3
-
-		track snakeAnc0
-		longLabel Anc0
-		shortLabel Anc0
-		otherSpecies Anc0
-		visibility full
-		parent hubCentralAlignments
-		showSnpWidth 3121
-		priority 6
-		bigDataUrl ../lod.txt
-		type halSnake
-		group snake
-		subGroups view=Snake orgs=Anc0
-
-		track snakeAnc2
-		longLabel Anc2
-		shortLabel Anc2
-		otherSpecies Anc2
-		visibility hide
-		parent hubCentralAlignments off
-		showSnpWidth 3121
-		priority 8
-		bigDataUrl ../lod.txt
-		type halSnake
-		group snake
-		subGroups view=Snake orgs=Anc2
-
-		track snakeAnc3
-		longLabel Anc3
-		shortLabel Anc3
-		otherSpecies Anc3
-		visibility hide
-		parent hubCentralAlignments off
-		showSnpWidth 3121
-		priority 9
-		bigDataUrl ../lod.txt
-		type halSnake
-		group snake
-		subGroups view=Snake orgs=Anc3
-
-		track snakeAnc5
-		longLabel Anc5
-		shortLabel Anc5
-		otherSpecies Anc5
-		visibility hide
-		parent hubCentralAlignments off
-		showSnpWidth 3121
-		priority 10
-		bigDataUrl ../lod.txt
-		type halSnake
-		group snake
-		subGroups view=Snake orgs=Anc5
-
-		track snakerheMac3
-		longLabel rheMac3
-		shortLabel rheMac3
-		otherSpecies rheMac3
-		visibility hide
-		parent hubCentralAlignments off
-		showSnpWidth 3121
-		priority 11
-		bigDataUrl ../lod.txt
-		type halSnake
-		group snake
-		subGroups view=Snake orgs=rheMac3
 
 		track snakeAnc6
 		longLabel Anc6
@@ -291,37 +174,24 @@ type bigBed 3
 		visibility hide
 		parent hubCentralAlignments off
 		showSnpWidth 3121
-		priority 12
+		priority 2
 		bigDataUrl ../lod.txt
 		type halSnake
 		group snake
 		subGroups view=Snake orgs=Anc6
 
-		track snakemm10
-		longLabel mm10
-		shortLabel mm10
-		otherSpecies mm10
-		visibility hide
-		parent hubCentralAlignments off
-		showSnpWidth 3121
-		priority 13
-		bigDataUrl ../lod.txt
-		type halSnake
-		group snake
-		subGroups view=Snake orgs=mm10
-
-		track snakegalGal4
-		longLabel galGal4
-		shortLabel galGal4
-		otherSpecies galGal4
+		track snakeAnc0
+		longLabel Anc0
+		shortLabel Anc0
+		otherSpecies Anc0
 		visibility full
 		parent hubCentralAlignments
 		showSnpWidth 3121
-		priority 14
+		priority 3
 		bigDataUrl ../lod.txt
 		type halSnake
 		group snake
-		subGroups view=Snake orgs=galGal4
+		subGroups view=Snake orgs=Anc0
 
 		track snakemonDom5
 		longLabel monDom5
@@ -330,7 +200,7 @@ type bigBed 3
 		visibility full
 		parent hubCentralAlignments
 		showSnpWidth 3121
-		priority 15
+		priority 5
 		bigDataUrl ../lod.txt
 		type halSnake
 		group snake
@@ -343,9 +213,139 @@ type bigBed 3
 		visibility hide
 		parent hubCentralAlignments off
 		showSnpWidth 3121
-		priority 16
+		priority 6
 		bigDataUrl ../lod.txt
 		type halSnake
 		group snake
 		subGroups view=Snake orgs=hg38
+
+		track snakerheMac3
+		longLabel rheMac3
+		shortLabel rheMac3
+		otherSpecies rheMac3
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 3121
+		priority 7
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=rheMac3
+
+		track snakebosTau8
+		longLabel bosTau8
+		shortLabel bosTau8
+		otherSpecies bosTau8
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 3121
+		priority 8
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=bosTau8
+
+		track snakecanFam3
+		longLabel canFam3
+		shortLabel canFam3
+		otherSpecies canFam3
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 3121
+		priority 9
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=canFam3
+
+		track snakegalGal4
+		longLabel galGal4
+		shortLabel galGal4
+		otherSpecies galGal4
+		visibility full
+		parent hubCentralAlignments
+		showSnpWidth 3121
+		priority 10
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=galGal4
+
+		track snakeAnc2
+		longLabel Anc2
+		shortLabel Anc2
+		otherSpecies Anc2
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 3121
+		priority 11
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Anc2
+
+		track snakeAnc3
+		longLabel Anc3
+		shortLabel Anc3
+		otherSpecies Anc3
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 3121
+		priority 12
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Anc3
+
+		track snakern6
+		longLabel rn6
+		shortLabel rn6
+		otherSpecies rn6
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 3121
+		priority 13
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=rn6
+
+		track snakeAnc4
+		longLabel Anc4
+		shortLabel Anc4
+		otherSpecies Anc4
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 3121
+		priority 14
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Anc4
+
+		track snakeAnc5
+		longLabel Anc5
+		shortLabel Anc5
+		otherSpecies Anc5
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 3121
+		priority 15
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Anc5
+
+		track snakemm10
+		longLabel mm10
+		shortLabel mm10
+		otherSpecies mm10
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 3121
+		priority 16
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=mm10
 
