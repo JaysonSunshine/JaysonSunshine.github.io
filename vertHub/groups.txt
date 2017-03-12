@@ -18,8 +18,8 @@ label Alignment Snakes
 priority 3
 defaultIsClosed 0
 
-name annotationaugCGP_liftover
-label Augcgp_liftover Annotations
+name annotationaugCGP_rnaseq+liftover
+label Augcgp_rnaseq+liftover Annotations
 priority 3
 defaultIsClosed 1
 
